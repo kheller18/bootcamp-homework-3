@@ -12,10 +12,21 @@ function generate() {
         while (passwordLength < 8 || passwordLength > 128)   
     }
 
-    let uppercase = confirm("Include uppercase letters (Cancel / OK)");
-    let lowercase = confirm("Include lowercase letters (Cancel / OK)");
-    let numbers = confirm("Include numbers (Cancel / OK)");
-    let specialCharacters = confirm("Include special characters (Cancel / OK)");
+    let uppercase = confirm("Include uppercase letters (Cancel / OK).");
+    let lowercase = confirm("Include lowercase letters (Cancel / OK).");
+    let numbers = confirm("Include numbers (Cancel / OK).");
+    let specialCharacters = confirm("Include special characters (Cancel / OK).");
+    
+    if (uppercase == false && lowercase == false && numbers == false && specialCharacters == false) {
+        do {
+            alert("No character types selected. Please select at least one character type.");
+            uppercase = confirm("Include uppercase letters (Cancel / OK).");
+            lowercase = confirm("Include lowercase letters (Cancel / OK).");
+            numbers = confirm("Include numbers (Cancel / OK).");
+            specialCharacters = confirm("Include special characters (Cancel / OK.)");
+        }
+        while (uppercase == false && lowercase == false && numbers == false && specialCharacters == false)
+    }
 
     const uppCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowCase = "abcdefghijklmnopqrstuvwxyz";
