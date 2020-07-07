@@ -23,10 +23,10 @@ function generate() {
     if (uppercase == false && lowercase == false && numbers == false && specialCharacters == false) {
         do {
             alert("No character types selected. Please select at least one character type?");
-            uppercase = confirm("Include uppercase letters (Cancel / OK)?");
-            lowercase = confirm("Include lowercase letters (Cancel / OK)?");
-            numbers = confirm("Include numbers (Cancel / OK)?");
-            specialCharacters = confirm("Include special characters (Cancel / OK)?");
+            uppercase = confirm("Include uppercase letters?");
+            lowercase = confirm("Include lowercase letters?");
+            numbers = confirm("Include numbers?");
+            specialCharacters = confirm("Include special characters?");
         }
         while (uppercase == false && lowercase == false && numbers == false && specialCharacters == false)
     }
