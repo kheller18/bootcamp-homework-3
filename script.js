@@ -14,10 +14,10 @@ function generate() {
     }
 
     // prompting the user for character type selections
-    let uppercase = confirm("Include uppercase letters (Cancel / OK)?");
-    let lowercase = confirm("Include lowercase letters (Cancel / OK)?");
-    let numbers = confirm("Include numbers (Cancel / OK)?");
-    let specialCharacters = confirm("Include special characters (Cancel / OK)?");
+    let uppercase = confirm("Include uppercase letters?");
+    let lowercase = confirm("Include lowercase letters?");
+    let numbers = confirm("Include numbers?");
+    let specialCharacters = confirm("Include special characters?");
 
     // error handling to ensure the user selects at least one character type 
     if (uppercase == false && lowercase == false && numbers == false && specialCharacters == false) {
